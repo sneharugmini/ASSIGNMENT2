@@ -1,0 +1,191 @@
+/*using flexbox and grid*/
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1500px;
+    
+  }
+  
+  /* Grid and Flexbox Layout */
+  header {
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header>nav {
+    background-color: #af2ad0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+  }
+
+  header>div {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+  }
+
+  header > div > div> div > img {
+    width: 300px;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  header nav ul li a:hover {
+    color: #f0c209;
+  }
+  
+  header img {
+    width: 80px;
+  }
+
+  header > div > div > img {
+    width: 200px;
+  }
+  
+  .content {
+    grid-column: 10 / 13;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  main {
+    flex: 2;
+    margin-right: 2rem;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  main img {
+    float: left;
+    width: 300px;
+    margin-bottom: 1em;
+    margin-right: 1em;
+  }
+  
+  main p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  aside {
+    width: 25%; /* set the width of the aside element */
+    margin-right: 2%; /* add some margin to the right of the aside element */
+    float: left; /* float the aside element to the left */
+    grid-column: 10 / 13;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  aside h2 {
+    font-size: 1.5em; /* increase the font size of the h2 element */
+    margin-bottom: 10px; /* add some margin below the h2 element */
+  }
+  
+  aside nav ul {
+    list-style: none; /* remove the default list bullet */
+    margin: 0;
+    padding: 0;
+  }
+  
+  aside nav li {
+    margin-bottom: 5px; /* add some margin between the list items */
+  }
+  
+  aside nav a {
+    text-decoration: none; /* remove the default underline from links */
+    color: #333; /* set the color of the links */
+    display: block; /* display the links as block elements */
+    padding: 5px; /* add some padding to the links */
+    background-color: #f2f2f2; /* add a background color to the links */
+    border-radius: 5px; /* add some rounded corners to the links */
+    transition: background-color 0.2s; /* add a transition effect to the background color */
+  }
+  
+  aside nav a:hover {
+    background-color: #ccc; /* change the background color on hover */
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    
+  }
+  
+  /* Additional Styles */
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #f0c209;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e0b109;
+  }
+  
+  .content > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .content > div:first-child img {
+    width: 150px;
+  }
+  
+  .content > div:nth-child(2) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .content > div:nth-child(2) button {
+    margin-top: 1rem;
+  }
